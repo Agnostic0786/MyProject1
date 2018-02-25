@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html >
+<title>BLOOD DONATION</title>
+<font color="red"   size="4" bgcolor="silver"><marquee scrollamount="10" height="25px" >--------- India's Biggest Blood Donation Organisation ----------</marquee></font>
+<head>
+<script  src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<style>
+.login{
+width:160px;height: 37px;font-size: 26px;position:absolute;margin-left:1019px;background-color:red;margin-top:-100px;
+}
+.register{
+width:162px;height: 37px;font-size: 26px;position:absolute;margin-left:1190px;background-color:red;margin-top:-100px;
+}
+.maindrop {
+    width: 1365px;
+    height: 40px;
+    margin-top: -32px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: -7px;
+    background: red;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    text-indent: 40px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.dropdown-active
+{
+                                 width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: -7px;
+								 margin-top: -32px;
+								 border: 1px ;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+                                 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+}
+
+						 .dropdown1{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 180px;
+								 margin-top: -32px;
+								 border:1px  ;
+								 background-color: 	red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+						  .dropdown2{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 370px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown3{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 560px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown4{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 750px;
+								 margin-top: -32px;
+								 border: 1px ;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown5{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 940px;
+								 margin-top: -32px;
+								 border:1px ;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .slider
+                                   {height :60px;
+                                     width:100px;
+									 }
+									
+										
+</style>
+
+<script>
+$(document).ready(function(){
+    $("#login").mouseover(function(){
+        $("#login").css("background-color", "teal");
+           
+	});
+    $("#login").mouseout(function(){
+        $("#login").css("background-color", "red");            
+	});
+	
+    $("#register").mouseover(function(){
+        $("#register").css("background-color", "teal");
+            
+	});
+    $("#register").mouseout(function(){
+		$("#register").css("background-color", "red");
+    });
+	$("#d1").mouseover(function(){
+        $("#d1").css("background-color", "teal");
+            
+	});
+    $("#d1").mouseout(function(){
+		$("#d1").css("background-color", "red");
+    });
+	
+	$("#d2").mouseover(function(){
+        $("#d2").css("background-color", "teal");
+            
+	});
+    $("#d2").mouseout(function(){
+		$("#d2").css("background-color", "red");
+    });
+	$("#d3").mouseover(function(){
+        $("#d3").css("background-color", "teal");
+            
+	});
+    $("#d3").mouseout(function(){
+		$("#d3").css("background-color", "red");
+    });
+	$("#d4").mouseover(function(){
+        $("#d4").css("background-color", "teal");
+            
+	});
+    $("#d4").mouseout(function(){
+		$("#d4").css("background-color", "red");
+    });
+	$("#d5").mouseover(function(){
+        $("#d5").css("background-color", "teal");
+            
+	});
+    $("#d5").mouseout(function(){
+		$("#d5").css("background-color", "red");
+    });
+	$("#d6").mouseover(function(){
+        $("#d6").css("background-color", "teal");
+            
+	});
+    $("#d6").mouseout(function(){
+		$("#d6").css("background-color", "red");
+    });
+	
+});
+//Slideshow
+
+var intervalid;
+function startImageSlideShow()
+{
+intervalid= setInterval(setImage,3000);
+}
+function stopImageSlideShow()
+{
+clearInterval(intervalid);
+}
+function setImage()
+{
+  var imageSrc=document.getElementById("mainImage").getAttribute("src");
+  var currentImageNumber=imageSrc.substring(imageSrc.lastIndexOf("/")+1,imageSrc.lastIndexOf("/")+2);
+  if(currentImageNumber==5)
+{
+  currentImageNumber=0;
+}
+document.getElementById("mainImage").setAttribute("src",""  +(Number(currentImageNumber)+1)+".jpg");
+}
+//piechart
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Punjab', 35],
+  ['Haryana', 45],
+  ['Gujrat', 20],
+  ['Uttar Pradesh', 10],
+  ['Himachal Pradesh', 15]
+]);
+ var options = {'title':'Average Blood Donars From Various States', 'width':550, 'height':400};
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+</script>
+<body onload="startImageSlideShow()">
+<div style="width:1360;background-color:Gainsboro;margin-top:-40px;background-image:url('Logo2.jpg');background-repeat:no-repeat;background-position:600px;background-size:200px 70px ">
+<h1 style="font-family: 'Playball', cursive;
+							font-size: 50px;
+					        text-indent: 50px ;">BLOOD DONATION</h1>
+</div>
+  <a  href="login.html"><div id="login" class="login" ><font color="white">Login </font> </div></a>
+ <a  href="register.html"><div   id="register" class="register" ><font color="white">Register </font></div></a>
+<div class="maindrop"></div>
+						   <a href="Default.html"> <div width="1340px" id="d1" class="dropdown-active"><font color="white">Home</font></div></a>
+						   <a href="BloodBanks.html"><div id="d2" class="dropdown1" ><font color="white">Blood Banks</font></div></a>
+						   <a href="DoctorsAvailable.html"><div  id="d3" class="dropdown2" ><font color="white">Doctors Available</font></div></a>
+						  <a href="Donate.html"><div id="d5"  class="dropdown3" ><font color="white">Donation</font></div></a>
+                            <a href="DiscussionForm.html"><div id="d4"  class="dropdown4"><font color="white">Discussion Forum</font></div></a>
+						   						  
+						  <a href="ContactUs.html"><div id="d6" class="dropdown5" ><font color="white">ContactUs</font></div></a>
+			               <a href=""><div style="margin-left:900px;background-color:gray"><font></font></div></a>	
+						   
+<div class="logo"></div>						   
+<div>
+<img id="mainImage" style="border:3px solid grey" src="1.jpg" height="300px" width="1340px"/>
+<div id="divId" style="text-align:left" onclick="changeImageOnClick()">
+</div> </div>
+<div width="1340px"><p style="text-align:left;"><font style="font-family:Trebuchet MS;font-size:30px;" color="blue">IT'S ABOUT LIFE     PLEASE DONATE BLOOD OFTEN !</font></p></div>
+<image src="Logo1.jpg" align="right" width="300px" height="600px"style="matgin-top:-50px"></image>
+
+<div width="1340px"><p ><font style="text-align:left;font-family:Comic Sans Ms;font-size:23px" color="red">WHAT WE DO</font></p></div>
+<div style="width:1345"><p style="text-align:left;margin-right:450px"><font style="font-family:'Lobster Two', cursive">
+India's Blood Centers' member organizations make up India's largest network of non-profit community blood centers, which operate more than 600 blood donation collection sites. Together the network provides half the India blood supply to over 3,500 hospitals and healthcare facilities. India's Blood Centers is not affiliated with the American Red Cross.
+Number of India's Blood Centers reporting their type O positive and negative blood supply for Sunday, November 
+19.
+</font>
+</p>
+</div>
+<div width="1340px"><p ><font style="text-align:left;font-family:Comic Sans Ms;font-size:23px" color="red">TODAY'S BLOOD SUPPLY</font></p>
+<p style="text-align:left;margin-right:450px">
+<font style="font-family:'Lobster Two', cursive;">
+Awareness is the only issue because people think that blood donation will affect there body.But it is not the case. Following is the data depicting blood donars average from states.
+</font>
+</p>
+</div>
+
+<div style="width:1345"><p style="text-align:left;margin-right:400px"><font style="font-family:'Lobster Two', cursive">
+<div style="margin-left:150px" id="piechart"></div>
+</font></p>
+<div style="margin-left:10px;margin-right:10px">
+<p ><font style="text-align:left;font-family:Comic Sans Ms;font-size:23px" color="red">Blood Types And The Population</font></p>
+<table>
+  <tr>
+    <th>Blood Group</th>
+    <th>Caucasian</th>
+    <th>African- American</th>
+    <th>Latino-American</th>
+    <th>Asian</th>
+  </tr>
+  <tr>
+    <td>O+</td>
+    <td>37%</td>
+    <td>47%</td>
+   <td>53%</td>
+    <td>39%</td>
+  </tr>
+  <tr>
+    <td>O-</td>
+    <td>8%</td>
+    <td>4%</td>
+   <td>4%</td> 
+   <td>1%</td>
+  </tr>
+  <tr>
+    <td>A+</td>
+    <td>33%</td>
+    <td>24%</td>
+     <td>29%</td> 
+     <td>27%</td>
+  </tr>
+  <tr>
+    <td>A-</td>
+    <td>7%</td>
+    <td>2%</td>
+     <td>2%</td>
+      <td>0.5%</td>
+  </tr>
+  <tr>
+    <td>B+</td>
+    <td>9%</td>
+    <td>18%</td>
+     <td>9%</td> <td>25%</td>
+</tr>
+  <tr>
+    <td>B-</td>
+    <td>2%</td>
+    <td>1%</td>
+     <td>1%</td>
+      <td>0.4%</td>
+  </tr>
+  
+  <tr>
+    <td>AB+</td>
+    <td>2%</td>
+    <td>4%</td>
+     <td>2%</td>
+      <td>7%</td>
+  </tr>
+  <tr>
+    <td>AB-</td>
+    <td>1%</td>
+    <td>0.3%</td>
+     <td>0.2%</td>
+      <td>0.1%</td>
+  </tr>
+</table>
+</div>
+
+<div style="margin-left:10px;margin-right:10px">
+<p ><font style="text-align:left;font-family:Comic Sans Ms;font-size:23px" color="red">How Can be My Blood Type Determined</font></p>
+<p style="text-align:;margin-right:450px">
+<font style="font-family:'Lobster Two', cursive;">
+It’s inherited. Like eye color, blood type is passed genetically from your parents. Whether your blood group is type A, B, AB or O is based on the blood types of your mother and father.
+ 
+<br>This chart shows the potential blood types you may inherit.</font>
+</p>
+<div>
+<table border="0" cellpadding="5" cellspacing="0" class="normal" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px" width="85%">
+<tbody>
+<tr>
+<td align="center" rowspan="2" valign="top">&nbsp;</td>
+<td align="right" bgcolor="#cccccc" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">Parent 1</td>
+<td align="center" bgcolor="#ffcccc" style="text-align: center; width: 30px" valign="top">AB</td>
+<td align="center" bgcolor="#cccccc" style="text-align: center; width: 30px" valign="top">AB</td>
+<td align="center" bgcolor="#ffcccc" style="text-align: center; width: 30px" valign="top">AB</td>
+<td align="center" bgcolor="#cccccc" style="text-align: center; width: 30px" valign="top">AB</td>
+<td align="center" bgcolor="#ffcccc" style="text-align: center; width: 30px" valign="top">B</td>
+<td align="center" bgcolor="#cccccc" style="text-align: center; width: 30px" valign="top">A</td>
+<td align="center" bgcolor="#ffcccc" style="text-align: center; width: 30px" valign="top">A</td>
+<td align="center" bgcolor="#cccccc" style="text-align: center; width: 30px" valign="top">O</td>
+<td align="center" bgcolor="#ffcccc" style="text-align: center; width: 30px" valign="top">O</td>
+<td align="center" bgcolor="#cccccc" style="text-align: center; width: 30px" valign="top">O</td>
+</tr>
+<tr>
+<td align="right" bgcolor="#ffffff" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">Parent 2</td>
+<td align="center" bgcolor="#ffdcdc" valign="top">AB</td>
+<td align="center" bgcolor="#ffffff" valign="top">B</td>
+<td align="center" bgcolor="#ffdcdc" valign="top">A</td>
+<td align="center" bgcolor="#ffffff" valign="top">O</td>
+<td align="center" bgcolor="#ffdcdc" valign="top">B</td>
+<td align="center" bgcolor="#ffffff" valign="top">B</td>
+<td align="center" bgcolor="#ffdcdc" valign="top">A</td>
+<td align="center" bgcolor="#ffffff" valign="top">B</td>
+<td align="center" bgcolor="#ffdcdc" valign="top">A</td>
+<td align="center" bgcolor="#ffffff" valign="top">O</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="middle">Possible<br />
+					blood<br />
+					type<br />
+					of<br />
+					child</td>
+</tr>
+<tr>
+<td align="right" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">O</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+</tr>
+<tr>
+<td align="right" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">A</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td align="right" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">B</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td align="right" colspan="2" style="padding-right: 5px; font-weight: bold" valign="top">AB</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">X</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">X</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+<td align="center" bgcolor="#f2b1b1" valign="top">&nbsp;</td>
+<td align="center" valign="top">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</head>
+</html>

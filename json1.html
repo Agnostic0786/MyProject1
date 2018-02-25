@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///C:/Users/Antriksh/Desktop/3rd%20YEAR/MINOR%20WEB%20STACK/jquery/json1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<p>Access a javascript Object:</p>
+Name : <input type="text" id="t1"><br>
+Age  : <input type="text" id="t2"><br>
+City  : <input type="text" id="t3"><br>
+<input type="submit" onclick="abc()"><br>
+<p id="demo"></p>
+<script>
+function abc()
+{
+a=document.getElementById("t1").value;
+b=document.getElementById("t2").value;
+c=document.getElementById("t3").value;
+var x;
+var myObj={"name":a,"age":b,+"city":c};
+x="myObj.name+" ,"+myObj.age+" ,"+myObj.city";
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body></html>

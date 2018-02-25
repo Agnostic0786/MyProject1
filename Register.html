@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html >
+<title>BLOOD DONATION</title>
+<font color="red"   size="4" bgcolor="silver"><marquee scrollamount="10" height="25px" >--------- India's Biggest Blood Donation Organisation ----------</marquee></font>
+<head>
+<script  src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<style>
+
+.login{
+width:160px;height: 37px;font-size: 26px;position:absolute;margin-left:1019px;background-color:red;margin-top:-100px;
+}
+.register{
+width:162px;height: 37px;font-size: 26px;position:absolute;margin-left:1190px;background-color:red;margin-top:-100px;
+}
+.maindrop {
+    width: 1365px;
+    height: 40px;
+    margin-top: -32px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: -7px;
+    background: red;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    text-indent: 40px;
+}
+.form{
+height: 580px;
+width : 700px;
+margin-left:350px;
+margin-right:px;
+background-color:gainsboro;
+margin-top: -20px;
+border-radius:30px;
+}
+.dropdown-active
+{
+                                 width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: -7px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+                                 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+}
+
+						 .dropdown1{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 180px;
+								 margin-top: -32px;
+								 border:1px ;
+								 background-color: 	red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   
+						  .dropdown2{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 370px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown3{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 560px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown4{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 750px;
+								 margin-top: -32px;
+								 border: 1px;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .dropdown5{
+						         width: 180px;
+							     height: 30px;
+                                 display: inline-block;
+								 margin-left: 940px;
+								 margin-top: -32px;
+								 border:1px ;
+								 background-color: red;
+                                 position: absolute;
+                                 text-align: center;
+								 font-family: 'Lobster Two', cursive;
+								 font-size: 20px;
+                                       }
+									   .slider
+                                   {height :60px;
+                                     width:100px;
+									 }
+									
+									input[type=submit] {
+    background-color: darkgray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button{
+height:35px;width:200px;border-radius:20px;background-color:red;
+color:white;font-size:20px;	border-color:salmon;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+    $("#login").mouseover(function(){
+        $("#login").css("background-color", "teal");
+           
+	});
+    $("#login").mouseout(function(){
+        $("#login").css("background-color", "red");            
+	});
+	
+    $("#register").mouseover(function(){
+        $("#register").css("background-color", "teal");
+            
+	});
+    $("#register").mouseout(function(){
+		$("#register").css("background-color", "red");
+    });
+	$("#d1").mouseover(function(){
+        $("#d1").css("background-color", "teal");
+            
+	});
+    $("#d1").mouseout(function(){
+		$("#d1").css("background-color", "red");
+    });
+	
+	$("#d2").mouseover(function(){
+        $("#d2").css("background-color", "teal");
+            
+	});
+    $("#d2").mouseout(function(){
+		$("#d2").css("background-color", "red");
+    });
+	$("#d3").mouseover(function(){
+        $("#d3").css("background-color", "teal");
+            
+	});
+    $("#d3").mouseout(function(){
+		$("#d3").css("background-color", "red");
+    });
+	$("#d4").mouseover(function(){
+        $("#d4").css("background-color", "teal");
+            
+	});
+    $("#d4").mouseout(function(){
+		$("#d4").css("background-color", "red");
+    });
+	$("#d5").mouseover(function(){
+        $("#d5").css("background-color", "teal");
+            
+	});
+    $("#d5").mouseout(function(){
+		$("#d5").css("background-color", "red");
+    });
+	$("#d6").mouseover(function(){
+        $("#d6").css("background-color", "teal");
+            
+	});
+    $("#d6").mouseout(function(){
+		$("#d6").css("background-color", "red");
+    });
+	$("#b1").mouseover(function(){
+        $("#b1").css("background-color", "teal");
+            
+	});
+    $("#b1").mouseout(function(){
+		$("#b1").css("background-color", "red");
+    });
+
+	   $("#b1").click(function(){
+	var a=$("#textbox1").val();
+	var b=$("#textbox2").val();
+	var c=$("#textbox3").val();
+	var d=$("#textbox4").val();
+	var e=$("#textbox5").val();
+	var f=$("#textbox6").val();
+	if(a==""||b==""||c==""||d==""||f==""){
+		alert("Please Enter All Values");
+		return 0;
+	}
+	 if(d.length>10 || d.length <10)
+	{
+	alert("Mobile Number Must Be of 10 digits ");
+	return 0;
+	}
+	if(e.length<6)
+	{
+	$("#lable1").html("Password Length Is Less Than 6");
+	}
+	if(f=='Doctor' || f=='Donor')
+	{
+	return true;
+	}
+	else{
+	$("#lable2").html("Select Doctor or Donor");
+	
+	}
+	if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(c))
+	{
+	return true;
+	}
+	else
+	{
+	$("#lable3").html("Invalid Email");
+	}
+	});
+	$("#div").show(4000);
+});
+
+</script>
+<div style="width:1340;background-color:Gainsboro;margin-top:-40px;background-image:url('Logo2.jpg');background-repeat:no-repeat;background-position:600px;background-size:200px 70px">
+<h1 style="font-family: 'Playball', cursive;
+							font-size: 50px;
+					        text-indent: 50px ;">BLOOD DONATION</h1>
+</div>
+</div>
+  <a  href="login.html"><div id="login" class="login" ><font color="white">Login </font> </div></a>
+ <a  href="register.html"><div   id="register" class="register" ><font color="white">Register </font></div></a>
+<div class="maindrop"></div> <a href="Default.html"> <div width="1340px" id="d1" class="dropdown-active"><font color="white">Home</font></div></a>
+						   <a href="BloodBanks.html"><div id="d2" class="dropdown1" ><font color="white">Blood Banks</font></div></a>
+						   <a href="DoctorsAvailable.html"><div  id="d3" class="dropdown2" ><font color="white">Doctors Available</font></div></a>
+						  <a href="Donate.html"><div id="d5"  class="dropdown3" ><font color="white">Donation</font></div></a>
+                            <a href="DiscussionForm.html"><div id="d4"  class="dropdown4"><font color="white">Discussion Forum</font></div></a>
+						   						  
+						  <a href="ContactUs.html"><div id="d6" class="dropdown5" ><font color="white">ContactUs</font></div></a>
+			               <a href=""><div style="margin-left:900px;background-color:gray"><font></font></div></a>	   
+		<div style="display:none" id="div"><form class="form" id="myForm">
+<div>
+<h1 style="text-align:center;color:red">Register</h1>
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">First Name</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="textbox1" type="text" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter FirstName"></input>
+</p>
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Last Name</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="textbox2"  type="text" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter LastName"></input>
+</p>
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Email</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="textbox3" type="text" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter Email"></input>
+<br><lable style="color:red" id="lable3"></lable>
+</p>
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Blood Group</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="select1" type="text" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter Email">
+<option value="AB+">AB+</option>
+<option value="A+">A+</option>
+<option value="B+">B+</option>
+<option value="A-">A-</option>
+<option value="B-">B-</option>
+<option value="AB-">AB-</option>
+<option value="O-">O-</option>
+<option value="O+">O+</option>
+<option value="Other">Other</option>
+
+
+</select>
+
+</p>
+
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Mobile</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="textbox4" type="number" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter Mobile"></input>
+</p>
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Password</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="textbox5" type="password" style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter Password"></input>
+<br><lable style="color:red" id="lable1"></lable>
+</p>
+
+<p style="text-align:center">
+<font style="font-family:'Lobster Two', cursive">Doctor or Donor </font>&nbsp;<input id="textbox6" type="text"  style="border-color:firebrick;height:35px;width:300px;border-radius:10px" placeholder="Enter Doctor or Donor"></input>
+<br><lable style="color:red" id="lable2"></lable>
+</p>
+<p style="text-align:center">
+<input class="button" type="button" id="b1" value="Login" ></input>
+</p>
+<p style="text-align:center">
+<font color="black">Already a User <a href="Login.html">Click Here!</a></font>
+</p>
+</div>
+</form>
+</div>
+		</body>
+</head>
+</html>

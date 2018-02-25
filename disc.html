@@ -1,0 +1,47 @@
+<html>
+<script  src="jquery-3.2.1.min.js"></script>
+<style>
+.form{
+height: 500px;
+width : 700px;
+margin-left:400px;
+margin-right:600px;
+background-color:lightgray;
+margin-top: 50px;
+border-radius:30px;
+}
+</style>
+<script>
+$(document).ready(function(){
+   $("#b1").click(function(){
+   var a=$("#textbox1").val();
+    var b=$("#mySelect").val();
+   var c=$("#textbox2").val();
+   alert(a);
+   if(b=='User')
+   {
+   alert("You Have to Login for Form");
+   
+   }
+   $("#l1").text(c);
+   });
+});
+</script>
+
+<form class="form">
+<div>
+<lable id="l1"></lable>
+<p id="p1"></p>
+<input id="textbox1" type="text" style="border-radius:10px;border-color:firebrick" placeholder="Enter Name"></input>
+<select id="mySelect"
+style="margin-top:310px;border-radius:10px;border-color:firebrick">
+  <option value="Doctor">Doctor</option>
+  <option value="User">User</option>
+  <option value="Guest">Guest</option>
+</select>
+<br>
+<textarea type="text" id="textbox2" placeholder="enter question here !" style="margin-top:10px;border-radius:20px" rows="5" cols="90"></textarea>
+<input type="button" value="Send" style="border-radius:10px;border-color:firebrick" id="b1"></input>
+</div>
+</form>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<script  src="jquery-3.2.1.min.js"></script>
+<style>
+.form{
+height: 350px;
+width : 500px;
+margin-left:400px;
+margin-right:600px;
+background-color:lightgray;
+margin-top: 150px;
+border-radius:30px;
+}
+</style>
+<script>
+$(document).ready(function(){
+   $("#login1").click(function(){
+   var a=$("#email").val();
+   if(a=="")
+   {
+   alert("Enter Email");
+   }
+   });
+});
+</script>
+
+<form class="form">
+<div>
+<p style="text-align:center">
+<font size="">Name</font>&nbsp;<input type="text" style="height:35px;width:300px;border-radius:10px" placeholder="Enter UserName"></input>
+</p>
+
+<p style="text-align:center">
+Email<input type="text"  id="email" style="height:35px;width:300px;border-radius:10px" placeholder="Password"></input>
+</p>
+<p style="text-align:center">
+Mobile<input type="numbers" id="mobile" style="height:35px;width:300px;border-radius:10px" placeholder="Password"></input>
+</p>
+<p style="text-align:center">
+Suggestion&nbsp;<textarea rows="6" id="suggestion" cols="40" type="text"  style="height:35px;width:300px;border-radius:10px"" placeholder="Password"></textarea>
+</p>
+
+<p style="text-align:center">
+<input type="button" value="Login" id="login1" style="height:25px;width:100px:border-radius:2"></input>
+</p>
+</div>
+<div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27305.162161162934!2d75.99766229999999!3d31.188985199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1511267915915" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</form>
+</html>
